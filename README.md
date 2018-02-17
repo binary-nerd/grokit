@@ -15,6 +15,10 @@ Dependencies
 - [`exuberant-ctags`](http://ctags.sourceforge.net/)
 - [`Apache Tomcat`](http://tomcat.apache.org/)
 
+
+### Installation
+Download jre-8u162 and place the downloaded tar.gz in the tools directory.
+
 Usage:
 ------------
 ```ruby
