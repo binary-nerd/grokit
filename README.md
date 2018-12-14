@@ -11,13 +11,10 @@ Dependencies
 
 ### Tools
 - [`Opengrok`](http://opengrok.github.io/OpenGrok/) (ofcourse!)
-- [`JRE`](http://www.oracle.com/technetwork/java/javase/downloads/index.html)
+- [`JRE 8`](http://www.oracle.com/technetwork/java/javase/downloads/index.html)
 - [`exuberant-ctags`](http://ctags.sourceforge.net/)
 - [`Apache Tomcat`](http://tomcat.apache.org/)
 
-
-### Installation
-Download jre-8u162 and place the downloaded tar.gz in the tools directory.
 
 Usage:
 ------------
@@ -25,10 +22,11 @@ Usage:
 # Clone the repository
 git clone https://github.com/raghusesha/grokit.git
 # Download and copy the dependent tools (check the section above) into the tools directory
-cd grokit/tools
-# download opengrok. e.g., wget http://java.net/projects/opengrok/downloads/download/opengrok-0.12.1.tar.gz
-# download jre, ctags and tomcat
+cd grokit/src/tools
+# download java jre-8
+# for Windows also download: ctags, tomcat and opengrok. e.g., wget http://java.net/projects/opengrok/downloads/download/opengrok-0.12.1.tar.gz
 cd ..
+# edit platdefines.py so the tool names and file sizes are correct
 python grokit.py --ppath=<path to project source> --action=setup
 ```
 For instant setup and using the tool,
@@ -36,7 +34,8 @@ Check the videos: http://www.youtube.com/watch?v=XzrPlAfiC1w and http://www.yout
 
 Platforms Tested On:
 ------------
-### Linux
+### Linux 
+- Ubuntu 14.04 64 bit
 - Ubuntu 12.04 64 bit
 - Ubuntu 11.04 64 bit
 
