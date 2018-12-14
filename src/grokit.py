@@ -36,7 +36,7 @@ NOTE: Each directory inside this will be considered as a opengrok project
 So, if you want single project, make sure that PPATH has only one child directory that contains all source files"""
 
 action_help="""
-Action to be performed.  Can be one of (setup|start|stop):
+Action to be performed.  Can be one of (setup|reindex|start|stop):
 - setup: Setup opengrok for the project source present at PPATH.
 - reindex: reindex changed project source.
 - start: Start the tomcat server

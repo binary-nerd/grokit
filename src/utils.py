@@ -124,8 +124,7 @@ def copy_war(tdir, tomdir, ppath):
     print myself()
     modified_war = ospath(tdir +"/"+os.path.basename(ppath)+".war")
     destfile = ospath(tomdir + "/webapps/")
-    print modified_war
-    print destfile
+    print "Copying war file."
     try:
         shutil.copy(modified_war, destfile)
         return True
@@ -231,6 +230,10 @@ def check_and_copy_tools(envs):
     if tools_present(envs) == True:
         if extract_and_copy(envs) == True:
             return True
+        else:
+            return False
+    else:
+        print "Tools not present."
     return False
 
 def tools_present(envs):
