@@ -12,7 +12,7 @@ Dependencies
 ### Tools
 - [`Opengrok`](http://opengrok.github.io/OpenGrok/) (ofcourse!)
 - [`JRE 8`](http://www.oracle.com/technetwork/java/javase/downloads/index.html)
-- [`exuberant-ctags`](http://ctags.sourceforge.net/)
+- [`universal-ctags`](https://github.com/universal-ctags/ctags)
 - [`Apache Tomcat`](http://tomcat.apache.org/)
 
 

@@ -89,9 +89,9 @@ elif 'Linux' in platform.platform():
                'extract_dir' : 'jre1.8.0_192',
                'bin_file': 'java'
               },
-      'ctags': { 'file_name' : 'exuberant-ctags.tar',
-                 'file_size': 921600,
-                 'extract_dir' : 'ctags58',
+      'ctags': { 'file_name' : 'universal-ctags.tar.gz',
+                 'file_size': 1455298,
+                 'extract_dir' : 'uctags',
                  'bin_file': 'ctags'
                 }
     }
