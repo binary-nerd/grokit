@@ -316,8 +316,7 @@ def index_og(envs):
     ctags = convert_to_os_path(get_tool_dir('ctags', envs)+"/"+get_tool_property('ctags','bin_file'))
     src = convert_to_os_path(envs['ppath'])
     data = convert_to_os_path(get_temp_dir(envs)+"/data")
-    webapp = os.path.basename(envs['ppath'])
-    cmd = java+" -jar "+opengrok+" -W "+config+" -c "+ctags+" -P -S -s "+src+" -d "+data+" -w "+webapp
+    cmd = java+" -jar "+opengrok+" -W "+config+" -c "+ctags+" -P -S -s "+src+" -d "+data
     try:
         os.system(cmd)
         return True

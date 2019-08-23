@@ -1,6 +1,6 @@
 ![Alt text](grokit.jpg?raw=true "grokit")
 
-grokit is a developer's tool to setup one of the best available source code search and cross reference engines, [`Opengrok`](http://opengrok.github.io/OpenGrok/).
+grokit is a developer's tool to setup one of the best available source code search and cross reference engines, [`Opengrok`](https://oracle.github.io/opengrok/).
 This repository contains the source code (without external dependencies) for grokit.  If you want to simply download and use grokit with all its dependencies, please visit [`grokit webpage`](http://grokit.pythonanywhere.com)
 
 Dependencies
@@ -10,7 +10,7 @@ Dependencies
 - [`lxml`](https://pypi.python.org/pypi/lxml)
 
 ### Tools
-- [`Opengrok`](http://opengrok.github.io/OpenGrok/) (ofcourse!)
+- [`Opengrok`](https://oracle.github.io/opengrok/) (ofcourse!)
 - [`JRE 8`](http://www.oracle.com/technetwork/java/javase/downloads/index.html)
 - [`universal-ctags`](https://github.com/universal-ctags/ctags)
 - [`Apache Tomcat`](http://tomcat.apache.org/)
@@ -28,6 +28,8 @@ cd grokit/src/tools
 cd ..
 # edit platdefines.py so the tool names and file sizes are correct
 python grokit.py --ppath=<path to project source> --action=setup
+# make changes to your project
+python grokit.py --ppath=<path to project source> --action=reindex
 ```
 For instant setup and using the tool,
 Check the videos: http://www.youtube.com/watch?v=XzrPlAfiC1w and http://www.youtube.com/watch?v=BTGnZShDiqA

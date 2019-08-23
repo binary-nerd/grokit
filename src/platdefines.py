@@ -74,19 +74,19 @@ elif 'Linux' in platform.platform():
         return newpath
 
     tools_dict = \
-    { 'tomcat' : { 'file_name': 'apache-tomcat-9.0.14.tar.gz',
-                   'file_size': 10492627,
-                   'extract_dir' : 'apache-tomcat-9.0.14',
+    { 'tomcat' : { 'file_name': 'apache-tomcat-9.0.24.tar.gz',
+                   'file_size': 10914435,
+                   'extract_dir' : 'apache-tomcat-9.0.24',
                    'bin_file': '.sh'
                   },
-      'opengrok' : { 'file_name' : 'opengrok-1.1-rc21.tar.gz',
-                     'file_size': 17492505,
-                     'extract_dir' : 'opengrok-1.1-rc21',
+      'opengrok' : { 'file_name' : 'opengrok-1.3.1.tar.gz',
+                     'file_size': 48057315,
+                     'extract_dir' : 'opengrok-1.3.1',
                      'bin_file': 'opengrok.jar'
                     },
-      'jre': { 'file_name' : 'jre-8u192-linux-x64.tar.gz',
-               'file_size': 84597342,
-               'extract_dir' : 'jre1.8.0_192',
+      'jre': { 'file_name' : 'jre-8u221-linux-x64.tar.gz',
+               'file_size': 87964916,
+               'extract_dir' : 'jre1.8.0_221',
                'bin_file': 'java'
               },
       'ctags': { 'file_name' : 'universal-ctags.tar.gz',
