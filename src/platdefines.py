@@ -74,24 +74,24 @@ elif 'Linux' in platform.platform():
         return newpath
 
     tools_dict = \
-    { 'tomcat' : { 'file_name': 'apache-tomcat-9.0.5.tar.gz',
-                   'file_size': 9475699,
-                   'extract_dir' : 'apache-tomcat-9.0.5',
+    { 'tomcat' : { 'file_name': 'apache-tomcat-9.0.24.tar.gz',
+                   'file_size': 10914435,
+                   'extract_dir' : 'apache-tomcat-9.0.24',
                    'bin_file': '.sh'
                   },
-      'opengrok' : { 'file_name' : 'opengrok-1.1-rc21.tar.gz',
-                     'file_size': 17492505,
-                     'extract_dir' : 'opengrok-1.1-rc21',
+      'opengrok' : { 'file_name' : 'opengrok-1.3.1.tar.gz',
+                     'file_size': 48057315,
+                     'extract_dir' : 'opengrok-1.3.1',
                      'bin_file': 'opengrok.jar'
                     },
-      'jre': { 'file_name' : 'jre-8u162-linux-x64.tar.gz',
-               'file_size': 80107578,
-               'extract_dir' : 'jre1.8.0_162',
+      'jre': { 'file_name' : 'jre-8u221-linux-x64.tar.gz',
+               'file_size': 87964916,
+               'extract_dir' : 'jre1.8.0_221',
                'bin_file': 'java'
               },
-      'ctags': { 'file_name' : 'exuberant-ctags.tar',
-                 'file_size': 921600,
-                 'extract_dir' : 'ctags58',
+      'ctags': { 'file_name' : 'universal-ctags.tar.gz',
+                 'file_size': 1455298,
+                 'extract_dir' : 'uctags',
                  'bin_file': 'ctags'
                 }
     }

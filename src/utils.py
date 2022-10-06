@@ -124,8 +124,7 @@ def copy_war(tdir, tomdir, ppath):
     print myself()
     modified_war = ospath(tdir +"/"+os.path.basename(ppath)+".war")
     destfile = ospath(tomdir + "/webapps/")
-    print modified_war
-    print destfile
+    print "Copying war file."
     try:
         shutil.copy(modified_war, destfile)
         return True
@@ -231,6 +230,10 @@ def check_and_copy_tools(envs):
     if tools_present(envs) == True:
         if extract_and_copy(envs) == True:
             return True
+        else:
+            return False
+    else:
+        print "Tools not present."
     return False
 
 def tools_present(envs):
@@ -313,8 +316,7 @@ def index_og(envs):
     ctags = convert_to_os_path(get_tool_dir('ctags', envs)+"/"+get_tool_property('ctags','bin_file'))
     src = convert_to_os_path(envs['ppath'])
     data = convert_to_os_path(get_temp_dir(envs)+"/data")
-    webapp = os.path.basename(envs['ppath'])
-    cmd = java+" -jar "+opengrok+" -W "+config+" -c "+ctags+" -P -S -s "+src+" -d "+data+" -w "+webapp
+    cmd = java+" -jar "+opengrok+" -W "+config+" -c "+ctags+" -P -S -s "+src+" -d "+data
     try:
         os.system(cmd)
         return True
